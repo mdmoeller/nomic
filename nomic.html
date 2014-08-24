@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml">	<head>		<meta http-equiv="content-type" content="text/html;charset=utf-8" />		<meta name="generator" content="Adobe GoLive" />		<title>Gnomik</title>		<style type="text/css" media="screen"><!--			#outline { position: relative; height: 800px; width: 800px; margin: 18px auto 0; border: solid 1px #999; }			#caption { width: 260px; left: 48px; top: 318px; position: absolute; visibility: visible; }			#text { left: 336px; top: 318px; position: absolute; width: 400px; visibility: visible; margin-top: 10px; }			#title { width: 800px; top: 100px; position: absolute; visibility: visible; }
+			#players { position: absolute; right: 20px; }			p { color: #666; font-size: 16px; font-family: "Lucida Grande", Arial, sans-serif; font-weight: normal; margin-top: 0; }			h1 { color: #778fbd; font-size: 20px; font-family: "Lucida Grande", Arial, sans-serif; font-weight: 500; line-height: 32px; margin-top: 4px; }			h2 { color: #778fbd; font-size: 18px; font-family: "Lucida Grande", Arial, sans-serif; font-weight: normal; margin: 0.83em 0 0; }			h3 { color: #666; font-size: 60px; font-family: "Lucida Grande", Arial, sans-serif; font-weight: bold; text-align: center; letter-spacing: -1px; width: auto; }			h4 { font-weight: bold; text-align: center; margin: 1.33em 0; }			a { color: #666; text-decoration: underline; }
+			table {border: 1px solid black;}		--></style>	</head>	<body>		<div id="outline">			<h3>Nomic</h3>
+					<div id="players">
+					<h1>Players</h1>
+					<table>
+						<tr> <th>Player</th> <th>Score</th> </tr>
+						<tr> <td>Mark</td> <td style="text-align: center;">0</td> </tr>
+						<tr> <td>Sam</td> <td style="text-align: center;">1</td> </tr>
+						<tr> <td>etc</td> <td style="text-align: center;">00</td> </tr>
+					</table>
+					</div>
+					<h1>Immutable rules</h1>
+					<table> 
+						<tr> <td>101)</td> <td>some rule</td> </tr>
+						<tr> <td>102)</td> <td>another rule</td> </tr>
+						<tr> <td>103)</td> <td>etc.</td> </tr>
+					</table>
+					<h1>Mutable rules</h1>
+					<table> 
+						<tr> <td>201)</td> <td>a rule</td> </tr>
+						<tr> <td>202)</td> <td>this rule will change</td> </tr>
+						<tr> <td>203)</td> <td>etc.</td> </tr>
+					</table>
+					<h1>Proposals</h1>
+					<table> 
+						<tr> <td>301)</td> <td>a proposal</td> </tr>
+						<tr> <td>302)</td> <td>another proposal</td> </tr>
+						<tr> <td>303)</td> <td>etc.</td> </tr>
+					</table>
+
+					<div id="changes">
+					</br><hr></br>
+					<h1>Propose a Rule Change</h1>
+					<form  method="POST" action="http://intranet.cs.usna.edu/~m136654/Lab08/submit.pl" id="change">
+						<input type="radio" name="type" value="add"> Add </br>
+						<input type="radio" name="type" value="amend"> Amend </br>
+						<input type="radio" name="type" value="repeal"> Repeal </br>
+						<input type="radio" name="type" value="transmute"> Transmute </br></br>
+						<select name="rule">
+							<option value="0" selected>NA</option>
+							<option value="101">101</option>
+							<option value="102">102</option>
+							<option value="103">103</option>
+							<option value="201">201</option>
+							<option value="202">202</option>
+							<option value="203">203</option>
+						</select> </br></br>
+						Rule Change (if applicable): <input type="text" name="prop" size="60">
+						<p><input type="submit" value="Submit"></p></br>
+					</form> </br></br><hr></br>
+					<h1>Vote</h1>
+					<form  method="POST" action="http://intranet.cs.usna.edu/~m136654/Lab08/submit.pl" id="vote">
+						Proposal:</br>
+						<select name="prop">
+							<option value="0" selected>NA</option>
+							<option value="301">301</option>
+							<option value="302">302</option>
+							<option value="303">303</option>
+						</select> </br></br>
+						<input type="radio" name="type" value="yea"> Nay </br>
+						<input type="radio" name="type" value="nay"> Yea </br>
+						<p><input type="submit" value="Submit" /></p></br>
+					</form> </br></br><hr>
+					<h1>Change Score</h1>
+					<form  method="POST" action="http://intranet.cs.usna.edu/~m136654/Lab08/submit.pl" id="newScore">
+						New Score: <input type="text" name="score">
+						<p><input type="submit" value="Submit" /></p></br>
+					</form> </br></br><hr></br>
+			<div>				<p>It’s a snap to create and publish your own website from your Mac. When your site is ready, it’s just as easy to publish it.</p>				<p>Open System Preferences and click Sharing, then select Web Sharing.</p>				<p>Your done. Your site is now available on your private network at home or work.</p>				<p>If you’re connected to the Internet, it can also be available to friends everywhere. Just send them the address shown in Sharing preferences.</p>				<h2>Apache Power</h2>				<p>Web Sharing is built on the <a href="http://www.apache.org/httpd">Apache</a> web server, an industry standard technology included with Mac OS X. For more information about the Apache web server, see the <a href="/manual/">Apache manual</a>.</p>			</div>					</div>			</body></html>
